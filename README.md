@@ -16,14 +16,14 @@ automatic discount for large purchases.
 ## Why this project?
 
 A retail billing system is a real world task everyone understands, and it
-naturally needs all four concepts from the tutorials videos.
+naturally needs all four concepts from the tutorial videos.
 
 | Concept | Where it's used | Why it fits there |
 |---|---|---|
 | **While loop** | The main menu in `main()` | We don't know in advance how many times the cashier will use the menu before exiting, a condition-controlled loop is the right tool. |
-| **For loop** | `viewCart()` and `checkout()` | We know exactly how many items are in the cart (`itemCount`) a fixed, known number of repetitions. |
-| **Do-while loop** | `readMenuChoice()` and `addItemToCart()` | We must ask for input *at least once* before we can check whether it's valid (menu choice, price, quantity). |
-| **Ternary operator** | `addItemToCart()` and `checkout()` | Short, single-value decisions: singular/plural wording, discount rate, and the discount message. |
+| **For loop** | `viewCart()` and `checkout()` | We know exactly how many items are in the cart (`itemCount`) — a fixed, known number of repetitions. |
+| **Do-while loop** | Menu choice validation in `main()`, and quantity validation in `addItemToCart()` | We must ask for input *at least once* before we can check whether it's valid. |
+| **Ternary operator** | `addItemToCart()` and `checkout()` | Short, single-value decisions: singular/plural wording, and the discount amount. |
 
 ## How to run it
 
@@ -42,7 +42,14 @@ naturally needs all four concepts from the tutorials videos.
 ## Features
 
 - Add multiple items to a cart (name, price, quantity)
-- Input validation — the program keeps re-asking until a valid number is entered
+- Re-prompts if the menu choice is out of range, or if quantity is zero or negative
 - View the current cart with a formatted, aligned table
 - Checkout: totals the bill, applies a 10% discount at UGX 50,000+, prints a receipt
 - Cart resets automatically after checkout, ready for the next customer
+
+## Known limitation
+
+The program expects numeric input where a number is asked for. Typing text
+(e.g. a letter) at a numeric prompt will crash the program rather than
+re-asking, since exception handling for that isn't covered until later in
+the course.
