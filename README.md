@@ -20,8 +20,8 @@ naturally needs all four concepts from the tutorials videos.
 
 | Concept | Where it's used | Why it fits there |
 |---|---|---|
-| **While loop** | The main menu in `main()` | We don't know in advance how many times the cashier will use the menu before exiting — a condition-controlled loop is the right tool. |
-| **For loop** | `viewCart()` and `checkout()` | We know exactly how many items are in the cart (`itemCount`) — a fixed, known number of repetitions. |
+| **While loop** | The main menu in `main()` | We don't know in advance how many times the cashier will use the menu before exiting, a condition-controlled loop is the right tool. |
+| **For loop** | `viewCart()` and `checkout()` | We know exactly how many items are in the cart (`itemCount`) a fixed, known number of repetitions. |
 | **Do-while loop** | `readMenuChoice()` and `addItemToCart()` | We must ask for input *at least once* before we can check whether it's valid (menu choice, price, quantity). |
 | **Ternary operator** | `addItemToCart()` and `checkout()` | Short, single-value decisions: singular/plural wording, discount rate, and the discount message. |
 
