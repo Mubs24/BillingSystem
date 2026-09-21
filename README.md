@@ -1,6 +1,6 @@
 # QuickMart Retail Billing System
 
-**BUC2125 — Object-Oriented Programming | Group Assignment (Episodes 10–13)**
+**BUC2125 — Object-Oriented Programming | Group Assignment**
 
 A simple console-based Java application that simulates billing a customer at a
 small retail shop: add items to a cart, view the cart, and check out with an
